@@ -1,65 +1,78 @@
-# Coding Challenge Submission
+# Weather & Balloon Data App
 
-## Weather & Balloon Data App
+## Live Demo
 
 ### Frontend
-- **Live URL**: [Frontend Live URL](https://your-frontend.vercel.app)
-- **GitHub Repo**: [Frontend GitHub Repo](https://github.com/your-username/weather-balloon-frontend)
+- **Live URL**: [Frontend Live URL](https://weather-app-ballon-frontend.vercel.app/)
+- **GitHub Repo**: [Frontend GitHub Repo](https://github.com/IbrahimCheena/Weather-app-ballon-frontend.git)
 
 ### Backend
-- **Live URL**: [Backend Live URL](https://your-backend.onrender.com)
-- **GitHub Repo**: [Backend GitHub Repo](https://github.com/your-username/weather-balloon-backend)
+- **Live URL**: [Backend Live URL](https://weather-balloon-app.onrender.com/)
+- **GitHub Repo**: [Backend GitHub Repo](https://github.com/IbrahimCheena/weather-balloon-app.git)
 
 ---
 
-### How to Run Locally
+## How to Run Locally
 
-#### Frontend
+### Frontend
+
 1. Clone the frontend repository:
    ```bash
    git clone https://github.com/your-username/weather-balloon-frontend.git
-Navigate to the frontend folder:
+   ```
+2. Navigate to the frontend folder:
+   ```bash
+   cd weather-balloon-frontend
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-bash
-Copy
-cd weather-balloon-frontend
-Install dependencies:
+### Backend
 
-bash
-Copy
-npm install
-Start the development server:
+1. Clone the backend repository:
+   ```bash
+   git clone https://github.com/your-username/weather-balloon-backend.git
+   ```
+2. Navigate to the backend folder:
+   ```bash
+   cd weather-balloon-backend
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Start the Flask server:
+   ```bash
+   python server.py
+   ```
+5. The backend will run at [http://localhost:5000](http://localhost:5000).
 
-bash
-Copy
-npm start
-Open http://localhost:3000 in your browser.
+---
 
-Backend
-Clone the backend repository:
+## Notes
+- The frontend fetches data from the backend API.
+- The backend uses the **Windborne API** for balloon data and the **Visual Crossing API** for weather data.
 
-bash
-Copy
-git clone https://github.com/your-username/weather-balloon-backend.git
-Navigate to the backend folder:
+---
 
-bash
-Copy
-cd weather-balloon-backend
-Install dependencies:
+## Technologies Used
+### Frontend:
+- React
+- Vite (or Create React App, if applicable)
+- Tailwind CSS (if applicable)
+- Axios for API requests
 
-bash
-Copy
-pip install -r requirements.txt
-Start the Flask server:
+### Backend:
+- Flask
+- Flask-CORS
+- Requests (for external API calls)
 
-bash
-Copy
-python server.py
-The backend will run at http://localhost:5000.
-
-Notes
-The frontend fetches data from the backend API.
-
-The backend uses the Windborne API for balloon data and the Visual Crossing API for weather data.
-
+## License
+This project is open-source and available under the MIT License.
